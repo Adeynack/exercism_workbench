@@ -1,0 +1,3 @@
+FROM debian
+
+WORKDIR /workspaces/${LOCAL_WORKSPACE_FOLDER_BASENAME}

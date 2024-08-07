@@ -1,0 +1,22 @@
+{
+  "name": "bash track @ exercism",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "containerEnv": {
+    "LOCAL_WORKSPACE_FOLDER_BASENAME": "${localWorkspaceFolderBasename}"
+  },
+  "remoteUser": "root",
+  "postCreateCommand": "bash ../install_exercism.sh",
+  "remoteEnv": {
+    "EDITOR": "code --wait"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "rogalmic.bash-debug"
+     ]
+    }
+  }
+}
