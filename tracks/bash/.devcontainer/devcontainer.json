@@ -7,7 +7,7 @@
     "LOCAL_WORKSPACE_FOLDER_BASENAME": "${localWorkspaceFolderBasename}"
   },
   "remoteUser": "root",
-  "postCreateCommand": "bash ../install_exercism.sh",
+  "postCreateCommand": "bash ../configure_exercism.sh",
   "remoteEnv": {
     "EDITOR": "code --wait"
   },

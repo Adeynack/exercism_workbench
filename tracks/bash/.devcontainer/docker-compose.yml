@@ -9,5 +9,11 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ../..:/workspaces:cached
+      - dot_config:/root/.config
+      - exercism:/root/exercism
     command: sleep infinity
     network_mode: host
+
+volumes:
+  dot_config:
+  exercism:
