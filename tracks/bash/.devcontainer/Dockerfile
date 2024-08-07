@@ -8,3 +8,6 @@ RUN apt install -y git
 RUN apt -y install --no-install-recommends golang
 ENV GOBIN=/usr/local/bin
 RUN go install github.com/exercism/cli/exercism@latest
+
+# Install `bats` for BASH testing.
+RUN apt -y install bats
